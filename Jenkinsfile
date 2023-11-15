@@ -10,8 +10,8 @@ node {
             catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                 withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
                     //def encodedPassword = URLEncoder.encode("$GIT_PASSWORD",'UTF-8')
-                    sh "git config user.email admin@example.com"
-                    sh "git config user.name devopsict"
+                    sh "git config user.email zakyfatih44@gmail.com"
+                    sh "git config user.name MuhammadZaky44"
                     //sh "git switch master"
                     sh "cat deployment.yaml"
                     sh "sed -i 's+zakyfatih/python-program.*+zakyfatih/python-program:${DOCKERTAG}+g' deployment.yaml"
