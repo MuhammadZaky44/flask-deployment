@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: zakyfatih/python-program:14
+        image: zakyfatih/python-program:15
         resources:
           limits:
             memory: "128Mi"
